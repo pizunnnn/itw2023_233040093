@@ -1,0 +1,42 @@
+body {
+    display: block;
+    background-image: url(img/background.pns);
+    background-repeat: repeat-x;
+}
+
+h1 {
+    font-family: Comic Sans MS;
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+}
+
+h3 a {
+    color: black;
+}
+
+h3 a:hover {
+    color: red;
+}
+
+p {
+    font-family: Georgia;
+    text-align: center;
+}
+
+.p1 {
+    color: orange;
+}
+
+p a:hover {
+    color: greenyellow;
+}
+
+h4 {
+    text-align: right;
+    font-style: italic;
+}
+
+h3 {
+    text-align: justify;
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE html?
+<htmml>
+    <head>
+        <title>Pertemuan ke-3</title>
+    </head>
+
+    <body>
+        <h2>Pertemuan ke-3</h2>
+            <p>lorem ipsum </p> 
+            <a href="latihan2.html">latihan 2</a>
+    </body>
+</html>
