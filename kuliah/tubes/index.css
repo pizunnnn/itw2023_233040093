@@ -1,0 +1,356 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'lato' sans-serif;
+    text-decoration: none;
+
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: #212523;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+nav .kanan {
+    display: flex;
+}
+
+nav .kiri a h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav .kanan .nav-link-wrapper a {
+    display: block;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 18px;
+}
+
+.container-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #eaeaea;
+    padding: 95px 0px 25px 0px;
+}
+
+
+.container-home p {
+    font-size: 20px;
+}
+
+.container-profile {
+    height: 300px;
+    width: 1000px;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container-profile img {
+    border-radius: 130px;
+    height: 280px;
+    width: 260px;
+    margin-left: 230px;
+    margin-right: 550px;
+}
+
+.container-profile .text {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 330px;
+
+}
+
+.container-profile .text p {
+    position: absolute;
+    display: flex;
+    flex-wrap: column;
+    justify-content: space-around;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+.container-about {
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr.split {
+    width: 300px;
+    height: 2px;
+    background: #000;
+    margin: 10px 0px;
+}
+
+.container-about .text {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.container-about .text p {
+    width: 500px;
+    margin: 0px 40px;
+    font-size: 18px;
+}
+
+.container-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #eaeaea;
+    padding: 25px 0px;
+}
+
+.container-projects .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-projects .card {
+    width: 350px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 0px 0px 5px 0px;
+}
+
+.container-projects .card img {
+    width: 100%;
+}
+
+.container-projects .card p {
+    color: #000;
+    padding: 10px;
+}
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.container-contact form {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contact form label {
+    margin-top: 10px;
+}
+
+.container-contact form input {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.container-contact form textarea {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.container-contact form button {
+    width: 70px;
+    background: #337AB7;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+body>input {
+    visibility: hidden;
+    position: absolute;
+}
+
+nav label {
+    display: none;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    background: #212523;
+    align-items: center;
+    position: relative;
+    width: 1920px;
+    height: 100px;
+    margin-top: 50px;
+
+}
+
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+    .container-about .text {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .container-about .text p {
+        width: 900px;
+        margin: 10px 0px;
+    }
+
+    .container-projects .card {
+        width: 450px;
+        margin: 20px 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav .kanan .nav-link-wrapper a {
+        padding: 20px 15px;
+    }
+
+    .container-about .text p {
+        width: 700px;
+    }
+
+    .container-projects .cards {
+        flex-direction: column;
+    }
+
+    .container-projects .card {
+        width: 750px;
+    }
+
+    .container-contact form {
+        width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .kanan {
+        display: none;
+    }
+
+    nav .hamburger,
+    nav .cross {
+        display: block;
+        padding: 17px 0px;
+        cursor: pointer;
+    }
+
+    nav .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 6px;
+    }
+
+    nav .cross span:nth-child(1) {
+        display: block;
+        width: 30px;
+        height: 4px;
+        transform-origin: 0 0;
+        transform: rotate(45deg);
+        margin-top: -2px;
+        background: red;
+    }
+
+    nav .cross span:nth-child(2) {
+        display: block;
+        width: 30px;
+        height: 4px;
+        transform-origin: 0 100%;
+        transform: rotate(-45deg);
+        margin-top: 17px;
+        background: red;
+    }
+
+    input#open:checked~nav .hamburger {
+        display: none;
+    }
+
+    input#close:checked~nav .cross {
+        display: none;
+    }
+
+    input#open:checked~nav .kanan {
+        display: flex;
+        position: fixed;
+        top: 57px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container-about .text {
+        width: 94%;
+        text-align: center;
+    }
+
+    .container-projects .card {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .container-contact {
+        width: 98%;
+    }
+
+    .container-contact form input,
+    .container-contact form textarea {
+        box-sizing: border-box
+    }
+}
+
+@media (max-width: 576px) {
+    .container-home img {
+        height: 203px;
+        width: 220px;
+    }
+
+    .container-home h1 {
+        width: 95%;
+        text-align: center;
+        font-size: 35px
+    }
+
+    .container-home p {
+        width: 95%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    hr.split {
+        width: 200px;
+    }
+}

@@ -1,0 +1,32 @@
+.container {
+    width: 600px;
+    margin: auto;
+    justify-content: space-around;
+    border: black solid 2px;
+}
+
+.header {
+    background-color: grey;
+    border: black solid 2px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main p {
+    background-color: #ddd;
+    margin: 20px 20px 0px 20px;
+    padding: 20px;
+    text-align: justify;
+
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p {
+    padding: 10px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <input type="radio" name="radio" id="open">
+    <input type="radio" name="radio" id="close" checked>
+    <!--nav-->
+    <nav>
+        <div class="kiri">
+            <a href="">
+                <h1>Dzikry M.I</h1>
+            </a>
+        </div>
+        <div class="kanan">
+            <div class="nav-link-wrapper"><a href="#home" class="page-scroll">Home </a></div>
+            <div class="nav-link-wrapper"><a href="#about" class="page-scroll">About </a></div>
+            <div class="nav-link-wrapper"><a href="#projects" class="page-scroll">Projects </a></div>
+            <div class="nav-link-wrapper"><a href="#contact" class="page-scroll">Contact </a></div>
+        </div>
+        <label for="open" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <label for="close" class="cross">
+            <span></span>
+            <span></span>
+        </label>
+    </nav>
+
+    <!--home-->
+    <div class="container-home" id="home">
+        <div class="container-profile" id="profile">
+            <img src="profile.jpg" alt="">
+            <div class="text">
+                <h1>Dzikry Maulana Ilham</h1>
+                <p> I like to learn new things, and I have curiosity about things, and I want to push myself to new
+                    challenges that can hone my skills, skills that I am currently studying in the field of programming.
+
+                    I also really like online games, playing football, and I am interested in designing the appearance
+                    of
+                    the website as attractive as possible.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--about-->
+    <div class="container-about" id="about">
+        <h1>About</h1>
+        <hr class="split">
+        <div class="text">
+            <p>Dzikry Ilham Maulana -
+                Bandung, Indonesia -
+                Bahasa Indonesia (Bahasa Ibu), Inggris Pasif
+            </p>
+
+        </div>
+    </div>
+    <!--projects-->
+    <div class="container-projects" id="projects">
+        <h1>Projects</h1>
+        <hr class="split">
+        <div class="cards">
+
+            <a href="">
+                <div class="card">
+                    <img src="gambar1.png" alt="">
+                    <p>Ini adalah Web Artikel pertama saya dalam menekuni bidang programing.</p>
+            </a>
+        </div>
+    </div>
+    <!--contact-->
+    <div class="container-contact" id="contact">
+        <h1>For any inquires & Information</h1>
+        <hr class="split">
+
+        <form action="" method="post">
+
+            <label for="">Name</label>
+            <input type="text" placeholder="Dimas Farabi">
+
+            <label for="">Phone Number</label>
+            <input type="text" placeholder="087********">
+
+            <label for="">Email</label>
+            <input type="text" placeholder="dimas@gmail.com">
+
+            <label for="">Message</label>
+            <textarea cols="80" rows="8" placeholder="Message"></textarea>
+
+            <button type="submit">Confirm</button>
+        </form>
+        <div class="container-footer">
+            <div class="footer">
+                <p class="copy"> ©2021 Dzikry Ilham.</p>
+            </div>
+        </div>
+</body>
+
+</html>
